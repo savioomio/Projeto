@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+:root {
+    --cinzaDeFundo: #2E3834;
+    --azulBotao: #004B83;
+    --cinzaBotao: #666666;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: #2E3834;
+}
+
+input::placeholder {
+    color: white;
+
+}
+
+input:focus {
+    outline: 2px solid white;
+
+
+}
+
+
+main#mainPrincipal {
+    /* background-color: rgba(255, 255, 255, 0.757); */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto 0px auto;
+
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+section#cadastro {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section#cadastro > article {
+
+
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    /* margin: 1.5vw 5vw 1.5vw 5vw; */
+    width: calc(100vw - 10vw);
+
+
+}
+
+
+
+
+article#formulario  input {
+    width: calc(100vw - 10vw);
+    padding: 8px 0px 8px 13px;
+    border: 1px solid white;
+    background-color: #2E3834;
+    border-radius: 5px;
+    color: white;
+    margin: 10px 0px 10px 0px;
+}
+
+
+aside#textoTopo {
+    font-size: 1.4em;
+    display: block;
+
+}
+aside#logo > img {
+    height: 35px;
+    margin-bottom: 30px;
+
+}
+
+article#textoBaixo {
+    font-size: 0.85em;
+    margin-bottom: 30px;
+
+}
+
+article#login > button {
+    background-color: var(--azulBotao);
+    border: none;
+    border-radius: 5px;
+    width: calc(100vw - 10vw);
+    padding: 8px;
+
+
+}
+
+input[type="submit"]{
+    background-color: var(--cinzaBotao);
+    border: none;
+    border-radius: 5px;
+    width: calc(100vw - 10vw);
+    padding: 8px;
+
+}
+
