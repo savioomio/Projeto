@@ -46,7 +46,7 @@ main#mainPrincipal {
 
 section#cadastro {
     display: flex;
-    background-color: black;
+
     flex-direction: column;
     height: 100vh;
     align-items: center;
