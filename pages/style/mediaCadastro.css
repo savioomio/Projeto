@@ -1,0 +1,48 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section#imagemLateral {
+        display: block;
+
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+}
+
+@media screen and (min-width: 1200px) {
+    
+}
+
+
+@media screen and (max-height: 450px) {
+    article#formulario{
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    article#formulario  input {
+        width: calc(50% - 2.3px);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+
+    }
+}

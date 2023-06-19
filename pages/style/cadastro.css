@@ -12,7 +12,12 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    overflow-y: hidden;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+
 }
 
 body {
@@ -25,10 +30,11 @@ input::placeholder {
 }
 
 input:focus {
-    outline: 2px solid white;
-
+    outline: 1px solid white;
 
 }
+
+
 
 
 main#mainPrincipal {
@@ -41,12 +47,12 @@ main#mainPrincipal {
 
     align-items: center;
     justify-content: space-around;
-    
+
 }
 
 section#cadastro {
     display: flex;
-
+    background-color: var(--cinzaDeFundo);
     flex-direction: column;
     height: 100vh;
     align-items: center;
@@ -54,7 +60,7 @@ section#cadastro {
 
 }
 
-section#cadastro > article {
+section#cadastro>article {
 
 
     margin-bottom: 1vw;
@@ -68,9 +74,7 @@ section#cadastro > article {
 }
 
 
-
-
-article#formulario  input {
+article#formulario input {
     width: calc(100vw - 10vw);
     padding: 8px 0px 8px 13px;
     border: 1px solid white;
@@ -78,17 +82,21 @@ article#formulario  input {
     border-radius: 5px;
     color: white;
     margin: 10px 0px 10px 0px;
+
 }
+
 
 
 aside#textoTopo {
     font-size: 1.4em;
-    display: block;
+
 
 }
-aside#logo > img {
+
+aside#logo>img {
     height: 35px;
     margin-bottom: 30px;
+    filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.381));
 
 }
 
@@ -98,7 +106,7 @@ article#textoBaixo {
 
 }
 
-article#login > button {
+article#login button {
     background-color: var(--azulBotao);
     border: none;
     border-radius: 5px;
@@ -108,7 +116,16 @@ article#login > button {
 
 }
 
-input[type="submit"]{
+article#login button:hover , input[type="submit"]:hover {
+    cursor: pointer;
+}
+article#login button , input[type="submit"], article#formulario  input {
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+
+input[type="submit"] {
     background-color: var(--cinzaBotao);
     border: none;
     border-radius: 5px;
@@ -117,3 +134,290 @@ input[type="submit"]{
 
 }
 
+section#imagemLateral {
+    display: none;
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        align-items: flex-end;
+
+    }
+    section#imagemLateral img {
+        width: 60vw;
+
+    }
+
+
+    article#formulario input {
+        width: calc(50vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        width: calc(50vw - 10vw);
+
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        align-items: flex-end;
+
+    }
+    section#imagemLateral img {
+        width: 60vw;
+
+    }
+
+
+    article#formulario input {
+        width: calc(50vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        width: calc(50vw - 10vw);
+
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+    }
+
+
+
+}
+
+@media screen and (min-width: 1200px) {
+    main#mainPrincipal {
+        background-color: white;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto 0px auto;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+
+    }
+
+    section#cadastro {
+        display: flex;
+        background-color: var(--cinzaDeFundo);
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    section#imagemLateral {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        align-items: flex-end;
+
+    }
+    section#imagemLateral img {
+        width: 55vw;
+
+    }
+
+
+    article#formulario input {
+        width: calc(50vw - 10vw);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    section#cadastro>article {
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* margin: 1.5vw 5vw 1.5vw 5vw; */
+        width: calc(50vw - 10vw);
+
+    }
+
+    article#login button {
+        background-color: var(--azulBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+
+    }
+
+    input[type="submit"] {
+        background-color: var(--cinzaBotao);
+        border: none;
+        border-radius: 5px;
+        width: calc(50vw - 10vw);
+        padding: 8px;
+
+    }
+
+
+
+}
+
+
+@media screen and (max-height: 465px) {
+    article#formulario {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #imagemLateral img {
+        height: 87vh;
+
+    }
+
+    article#formulario input {
+        width: calc(50% - 2.3px);
+        padding: 8px 0px 8px 13px;
+        border: 1px solid white;
+        background-color: #2E3834;
+        border-radius: 5px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+
+
+    }
+}
