@@ -219,7 +219,7 @@ section#imagemLateral {
         margin-left: 5vw;
         margin-right: 5vw;
         /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        width: calc(50vw - 10vw);
+        max-width: calc(51vw - 10vw);
 
     }
 
@@ -227,7 +227,7 @@ section#imagemLateral {
         background-color: var(--azulBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        max-width: calc(50vw - 10vw);
         padding: 8px;
 
 
@@ -237,7 +237,7 @@ section#imagemLateral {
         background-color: var(--cinzaBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        max-width: calc(50vw - 10vw);
         padding: 8px;
 
     }
@@ -307,13 +307,13 @@ section#imagemLateral {
     }
 
     section#imagemLateral img {
-        width: 60vw;
+        max-width: 65vw;
 
     }
 
 
     article#formulario input {
-        width: calc(50vw - 10vw);
+        max-width: calc(37vw - 10vw);
         padding: 8px 0px 8px 13px;
         border: 1px solid white;
         background-color: #2E3834;
@@ -329,7 +329,7 @@ section#imagemLateral {
         margin-left: 5vw;
         margin-right: 5vw;
         /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        width: calc(50vw - 10vw);
+        max-width: calc(38vw - 10vw);
 
     }
 
@@ -337,7 +337,7 @@ section#imagemLateral {
         background-color: var(--azulBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        max-width: calc(37vw - 10vw);
         padding: 8px;
 
 
@@ -347,7 +347,7 @@ section#imagemLateral {
         background-color: var(--cinzaBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        max-width: calc(37vw - 10vw);
         padding: 8px;
 
     }
@@ -420,19 +420,20 @@ section#imagemLateral {
     }
 
     section#imagemLateral img {
-        width: 55vw;
+        width: 63vw;
 
     }
 
 
     article#formulario input {
-        width: calc(50vw - 10vw);
+        width: calc(37vw - 10vw);
         padding: 8px 0px 8px 13px;
         border: 1px solid white;
         background-color: #2E3834;
         border-radius: 5px;
         color: white;
         margin: 10px 0px 10px 0px;
+
 
     }
 
@@ -442,7 +443,7 @@ section#imagemLateral {
         margin-left: 5vw;
         margin-right: 5vw;
         /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        width: calc(50vw - 10vw);
+        width: calc(38vw - 10vw);
 
     }
 
@@ -450,8 +451,9 @@ section#imagemLateral {
         background-color: var(--azulBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        width: calc(37vw - 10vw);
         padding: 8px;
+
 
 
     }
@@ -460,7 +462,7 @@ section#imagemLateral {
         background-color: var(--cinzaBotao);
         border: none;
         border-radius: 5px;
-        width: calc(50vw - 10vw);
+        width: calc(37vw - 10vw);
         padding: 8px;
 
     }
