@@ -83,12 +83,26 @@ article#formulario input {
     color: white;
     margin: 10px 0px 10px 0px;
 
+
 }
 
 
 
 aside#textoTopo {
-    font-size: 1.4em;
+    font-size: 1.5em;
+
+
+}
+
+aside#textoTopo::after {
+
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.37rem;
+    background-color: var(--azulBotao);
+    border-radius: 10px;
+
 
 
 }
@@ -96,7 +110,7 @@ aside#textoTopo {
 aside#logo>img {
     height: 35px;
     margin-bottom: 30px;
-    filter: drop-shadow(8px 6px 4px rgba(0, 0, 0, 0.381));
+    filter: drop-shadow(4px 3px 0px #004B83);
 
 }
 
@@ -116,11 +130,16 @@ article#login button {
 
 }
 
-article#login button:hover , input[type="submit"]:hover {
+article#login button:hover,
+input[type="submit"]:hover,
+input {
     cursor: pointer;
 }
-article#login button , input[type="submit"], article#formulario  input {
-    cursor: pointer;
+
+article#login button,
+input[type="submit"],
+article#formulario input {
+
     font-size: 0.9em;
 }
 
@@ -131,6 +150,7 @@ input[type="submit"] {
     border-radius: 5px;
     width: calc(100vw - 10vw);
     padding: 8px;
+    margin: 8px 0px 8px 0px;
 
 }
 
@@ -171,10 +191,11 @@ section#imagemLateral {
         right: 0px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: flex-end;
 
     }
+
     section#imagemLateral img {
         width: 60vw;
 
@@ -221,6 +242,29 @@ section#imagemLateral {
 
     }
 
+    @media screen and (max-height: 485px) {
+        article#formulario {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #imagemLateral img {
+            height: 87vh;
+
+        }
+
+        article#formulario input {
+            width: calc(50% - 2.3px);
+            padding: 8px 0px 8px 13px;
+            border: 1px solid white;
+            background-color: #2E3834;
+            border-radius: 5px;
+            color: white;
+            margin: 10px 0px 10px 0px;
+
+
+        }
+    }
 
 
 }
@@ -257,10 +301,11 @@ section#imagemLateral {
         right: 0px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: flex-end;
 
     }
+
     section#imagemLateral img {
         width: 60vw;
 
@@ -306,6 +351,32 @@ section#imagemLateral {
         padding: 8px;
 
     }
+
+    @media screen and (max-height: 507px) {
+        article#formulario {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #imagemLateral img {
+            height: 87vh;
+
+        }
+
+        article#formulario input {
+            width: calc(50% - 2.3px);
+            padding: 8px 0px 8px 13px;
+            border: 1px solid white;
+            background-color: #2E3834;
+            border-radius: 5px;
+            color: white;
+            margin: 10px 0px 10px 0px;
+
+
+        }
+    }
+
+
 
 
 
@@ -343,10 +414,11 @@ section#imagemLateral {
         right: 0px;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end; 
+        justify-content: flex-end;
         align-items: flex-end;
 
     }
+
     section#imagemLateral img {
         width: 55vw;
 
@@ -392,6 +464,31 @@ section#imagemLateral {
         padding: 8px;
 
     }
+
+    @media screen and (max-height: 525px) {
+        article#formulario {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #imagemLateral img {
+            height: 87vh;
+
+        }
+
+        article#formulario input {
+            width: calc(50% - 2.3px);
+            padding: 8px 0px 8px 13px;
+            border: 1px solid white;
+            background-color: #2E3834;
+            border-radius: 5px;
+            color: white;
+            margin: 10px 0px 10px 0px;
+
+
+        }
+    }
+
 
 
 
