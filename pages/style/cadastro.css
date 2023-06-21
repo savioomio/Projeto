@@ -4,6 +4,10 @@
     --cinzaDeFundo: #2E3834;
     --azulBotao: #004B83;
     --cinzaBotao: #666666;
+    --brancoInput: white;
+    --cinzaLabel: #dbdbdb;
+    --cinzaInformacoes: #666666;
+
 }
 
 * {
@@ -30,7 +34,7 @@ input::placeholder {
 }
 
 input:focus {
-    outline: 1px solid white;
+    outline: none;
 
 }
 
@@ -41,10 +45,9 @@ main#mainPrincipal {
     /* background-color: rgba(255, 255, 255, 0.757); */
     width: 100%;
     height: 100%;
+    margin: 0px auto 0px auto;
     display: flex;
     flex-direction: row;
-    margin: 0px auto 0px auto;
-
     align-items: center;
     justify-content: space-around;
 
@@ -61,49 +64,43 @@ section#cadastro {
 }
 
 section#cadastro>article {
-
-
     margin-bottom: 1vw;
     margin-top: 1vw;
     margin-left: 5vw;
     margin-right: 5vw;
     /* margin: 1.5vw 5vw 1.5vw 5vw; */
-    width: calc(100vw - 10vw);
-
+    width: 90vw;
 
 }
 
-
+/* certo */
 article#formulario input {
-    width: calc(100vw - 10vw);
+    width: 100%;
     padding: 8px 0px 8px 13px;
-    border: 1px solid white;
     background-color: #2E3834;
-    border-radius: 5px;
-    color: white;
+    color: var(--Input);
     margin: 10px 0px 10px 0px;
 
-
 }
 
+/* div.group>input {
+    border-radius: 2px;
 
+} */
 
 aside#textoTopo {
     font-size: 1.5em;
-
+    margin-bottom: 0px;
 
 }
 
 aside#textoTopo::after {
-
     content: '';
     display: block;
     width: 5rem;
     height: 0.37rem;
     background-color: var(--azulBotao);
     border-radius: 10px;
-
-
 
 }
 
@@ -124,7 +121,7 @@ article#login button {
     background-color: var(--azulBotao);
     border: none;
     border-radius: 5px;
-    width: calc(100vw - 10vw);
+    width: 100%;
     padding: 8px;
 
 
@@ -148,7 +145,7 @@ input[type="submit"] {
     background-color: var(--cinzaBotao);
     border: none;
     border-radius: 5px;
-    width: calc(100vw - 10vw);
+    width: 100%;
     padding: 8px;
     margin: 8px 0px 8px 0px;
 
@@ -159,364 +156,123 @@ section#imagemLateral {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    main#mainPrincipal {
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        margin: 0px auto 0px auto;
-
-        align-items: flex-end;
-        justify-content: flex-start;
-
-
-    }
-
-    section#cadastro {
+/* 
+@media screen and (min-width: 600px) and (max-width: 768px){
+        section#cadastro {
         display: flex;
         background-color: var(--cinzaDeFundo);
         flex-direction: column;
-        height: 100%;
+        height: 150%;
         align-items: center;
         justify-content: center;
 
 
     }
 
-    section#imagemLateral {
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-    }
-
-    section#imagemLateral img {
-        width: 60vw;
-
-    }
 
 
-    article#formulario input {
-        width: calc(50vw - 10vw);
-        padding: 8px 0px 8px 13px;
-        border: 1px solid white;
-        background-color: #2E3834;
-        border-radius: 5px;
-        color: white;
-        margin: 10px 0px 10px 0px;
-
-    }
-
-    section#cadastro>article {
-        margin-bottom: 1vw;
-        margin-top: 1vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        max-width: calc(51vw - 10vw);
-
-    }
-
-    article#login button {
-        background-color: var(--azulBotao);
-        border: none;
-        border-radius: 5px;
-        max-width: calc(50vw - 10vw);
-        padding: 8px;
+} */
 
 
-    }
-
-    input[type="submit"] {
-        background-color: var(--cinzaBotao);
-        border: none;
-        border-radius: 5px;
-        max-width: calc(50vw - 10vw);
-        padding: 8px;
-
-    }
-
-    @media screen and (max-height: 485px) {
-        article#formulario {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #imagemLateral img {
-            height: 87vh;
-
-        }
-
-        article#formulario input {
-            width: calc(50% - 2.3px);
-            padding: 8px 0px 8px 13px;
-            border: 1px solid white;
-            background-color: #2E3834;
-            border-radius: 5px;
-            color: white;
-            margin: 10px 0px 10px 0px;
-
-
-        }
-    }
-
+.group {
+    position: relative;
+    display: inline;
 
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    main#mainPrincipal {
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        margin: 0px auto 0px auto;
-
-        align-items: flex-end;
-        justify-content: flex-start;
-
-
-    }
-
-    section#cadastro {
-        display: flex;
-        background-color: var(--cinzaDeFundo);
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-
-    section#imagemLateral {
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-    }
-
-    section#imagemLateral img {
-        max-width: 65vw;
-
-    }
-
-
-    article#formulario input {
-        max-width: calc(37vw - 10vw);
-        padding: 8px 0px 8px 13px;
-        border: 1px solid white;
-        background-color: #2E3834;
-        border-radius: 5px;
-        color: white;
-        margin: 10px 0px 10px 0px;
-
-    }
-
-    section#cadastro>article {
-        margin-bottom: 1vw;
-        margin-top: 1vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        max-width: calc(38vw - 10vw);
-
-    }
-
-    article#login button {
-        background-color: var(--azulBotao);
-        border: none;
-        border-radius: 5px;
-        max-width: calc(37vw - 10vw);
-        padding: 8px;
-
-
-    }
-
-    input[type="submit"] {
-        background-color: var(--cinzaBotao);
-        border: none;
-        border-radius: 5px;
-        max-width: calc(37vw - 10vw);
-        padding: 8px;
-
-    }
-
-    @media screen and (max-height: 507px) {
-        article#formulario {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #imagemLateral img {
-            height: 87vh;
-
-        }
-
-        article#formulario input {
-            width: calc(50% - 2.3px);
-            padding: 8px 0px 8px 13px;
-            border: 1px solid white;
-            background-color: #2E3834;
-            border-radius: 5px;
-            color: white;
-            margin: 10px 0px 10px 0px;
-
-
-        }
-    }
-
-
-
-
-
+.input {
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--brancoInput);
+    background: transparent;
 }
 
-@media screen and (min-width: 1200px) {
-    main#mainPrincipal {
-        background-color: white;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: row;
-        margin: 0px auto 0px auto;
+.input:focus {
+    outline: none;
+}
 
-        align-items: flex-end;
-        justify-content: flex-start;
+label {
+    color: var(--cinzaLabel);
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    bottom: 20px;
+    transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -webkit-transition: 0.3s ease all;
+}
 
+.input:focus~label,
+.input:valid~label {
+    top: -3px;
+    font-size: 14px;
+    color: var(--cinzaBotao);
+}
 
-    }
+.input:focus~label::after,
+.input:valid~label::after {
+    content: ':';
+}
 
-    section#cadastro {
-        display: flex;
-        background-color: var(--cinzaDeFundo);
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-
-    section#imagemLateral {
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-
-    }
-
-    section#imagemLateral img {
-        width: 63vw;
-
-    }
-
-
-    article#formulario input {
-        width: calc(37vw - 10vw);
-        padding: 8px 0px 8px 13px;
-        border: 1px solid white;
-        background-color: #2E3834;
-        border-radius: 5px;
-        color: white;
-        margin: 10px 0px 10px 0px;
-
-
-    }
-
-    section#cadastro>article {
-        margin-bottom: 1vw;
-        margin-top: 1vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        /* margin: 1.5vw 5vw 1.5vw 5vw; */
-        width: calc(38vw - 10vw);
-
-    }
-
-    article#login button {
-        background-color: var(--azulBotao);
-        border: none;
-        border-radius: 5px;
-        width: calc(37vw - 10vw);
-        padding: 8px;
-
-
-
-    }
-
-    input[type="submit"] {
-        background-color: var(--cinzaBotao);
-        border: none;
-        border-radius: 5px;
-        width: calc(37vw - 10vw);
-        padding: 8px;
-
-    }
-
-    @media screen and (max-height: 525px) {
-        article#formulario {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #imagemLateral img {
-            height: 87vh;
-
-        }
-
-        article#formulario input {
-            width: calc(50% - 2.3px);
-            padding: 8px 0px 8px 13px;
-            border: 1px solid white;
-            background-color: #2E3834;
-            border-radius: 5px;
-            color: white;
-            margin: 10px 0px 10px 0px;
-
-
-        }
-    }
-
-
-
-
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
 }
 
 
-@media screen and (max-height: 465px) {
-    article#formulario {
-        display: flex;
-        flex-direction: row;
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: #5264AE;
     }
 
-    #imagemLateral img {
-        height: 87vh;
-
-    }
-
-    article#formulario input {
-        width: calc(50% - 2.3px);
-        padding: 8px 0px 8px 13px;
-        border: 1px solid white;
-        background-color: #2E3834;
-        border-radius: 5px;
-        color: white;
-        margin: 10px 0px 10px 0px;
-
-
+    to {
+        width: 0;
+        background: transparent;
     }
 }

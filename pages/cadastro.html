@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="style/cadastro.css" media="all">
-    <!-- <link rel="stylesheet" href="style/mediaCadastro.css"> -->
+    <link rel="stylesheet" href="style/mediaCadastro.css">
 
 
 </head>
@@ -28,14 +28,50 @@
             </article>
 
             <article id="formulario">
+                
                 <form action="teste.php" method="post">
-                    <input type="text" name="nome" id="inome" placeholder="Nome">
+                    <div class="group groupNome">
+                        <input required="required" name="prenome" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nome</label>
+                    </div>
+
+                    <div class="group groupSobrenome">
+                        <input required="required" name="sobrenome" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Sobrenome</label>
+                    </div>
+
+                    <div class="group groupEmail">
+                        <input required="required" name="email" type="email" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Email</label>
+                    </div>
+                
+                    <div class="group">
+                        <input required="required" name="senha" type="password" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Senha</label>
+                    </div>
+
+                    <div class="group">
+                        <input required="required" name="username" type="text" class="input">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nome de usuário</label>
+                    </div>
+                    
+                    <!-- <input type="text" name="nome" id="inome" placeholder="Nome">
 
                     <input type="text" name="sobrenome" id="isobrenome" placeholder="Sobrenome">
 
                     <input type="email" name="email" id="iemail" placeholder="Email">
 
-                    <input type="password" name="senha" id="isenha" placeholder="Senha">
+                    <input type="password" name="senha" id="isenha" placeholder="Senha"> -->
 
             </article>
 
